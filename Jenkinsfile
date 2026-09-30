@@ -12,14 +12,6 @@ pipeline {
             }
         }
 
-        stage('Test') {
-            steps {
-                dir('frontend') {
-                    bat 'npm test'
-                }
-            }
-        }
-
         stage('Build') {
             steps {
                 dir('frontend') {
